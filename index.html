@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <form id="global" autocomplete="off">
+      <div class="card">
+        <div class="input">
+          <div class="input-day">
+            <h3>DAY</h3>
+            <input id="input-day" class="form-control" placeholder="DD" />
+            <div class="error-day"></div>
+          </div>
+          <div class="input-month">
+            <h3>MONTH</h3>
+            <input id="input-month" class="form-control" placeholder="MM" />
+            <div class="error-month"></div>
+          </div>
+          <div class="input-year">
+            <h3>YEAR</h3>
+            <input id="input-year" class="form-control" placeholder="YYYY" />
+            <div class="error-year"></div>
+          </div>
+        </div>
+        <div class="logo">
+          <div class="line"></div>
+          <button class="arrow" type="submit">
+            <img src="./assets/images/icon-arrow.svg" alt="icon" />
+          </button>
+        </div>
+        <div class="value">
+          <div class="output-year">
+            <strong id="output-year">--</strong>
+            <strong>&nbsp; years</strong>
+          </div>
+          <div class="output-month">
+            <strong id="output-month">--</strong>
+            <strong>&nbsp; months</strong>
+          </div>
+          <div class="output-day">
+            <strong id="output-day">--</strong>
+            <strong>&nbsp; days</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Fitsch Yann</a>.
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
